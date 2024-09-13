@@ -859,3 +859,17 @@ footer{
 #map {
     height: 100%;
 }
+[class*="copyrights-pane"] {
+    display: none !important;
+}
+.ymaps-2-1-79-ground-pane {
+    -ms-filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    filter: grayscale(1) grayscale(1) invert(80%);
+}
+.tn-elem__4346096441649723484272 {
+    mix-blend-mode: difference;
+    pointer-events: none;
+}
