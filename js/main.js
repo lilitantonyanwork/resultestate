@@ -37,7 +37,14 @@ $(function (){
         asNavFor: '.slider-for',
         arrows: true,
         centerMode: false,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },]
     });
 
     $('.gallery-list').slick({
@@ -48,4 +55,46 @@ $(function (){
         fade: true,
         cssEase: 'linear'
     });
+    $('.apartment__btn').on('click',function (){
+        $('.apartment__btn').removeClass('apartment-selected');
+        $(this).addClass('apartment-selected');
+    })
+    $('.floor').on('click',function (){
+        $('.floor').removeClass(' floor--selected');
+        $(this).addClass(' floor--selected');
+    })
+    $('.room').on('click',function (){
+        $('.room').removeClass('room__active');
+        $(this).addClass('room__active');
+    });
+    $('.mobile__menu--open').on('click',function (){
+        $('nav').addClass('opened');
+        $('.mobile__menu--close').show();
+        $(this).hide()
+    });
+    $('.mobile__menu--close').on('click',function (){
+        $('nav').removeClass('opened');
+        $('.mobile__menu--open').show();
+        $(this).hide()
+    })
+    $('.btn-play').on('click',function (){
+        $(this).hide();
+        $('.info__right img').hide();
+        $('#video').show();
+        $('#video').get(0).play()
+    })
+
+
 })
+let map;
+
+async function initMap() {
+    const { Map } = await google.maps.importLibrary("maps");
+
+    map = new Map(document.getElementById("map"), {
+        center: { lat: -34.397, lng: 150.644 },
+        zoom: 8,
+    });
+}
+
+initMap();

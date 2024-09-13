@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Result estate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -16,6 +18,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 <header>
@@ -64,6 +67,14 @@
             </div>
             <a class="nav__tel" href="tel:+375 (29) 188-11-99">+375 (29) 188-11-99</a>
             <button class="btn btn-yellow">Перезвоните мне</button>
+            <div class="mobile__menu--open dn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M3 4H21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 12H21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <path d="M3 20H21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg></div>
+            <div class="mobile__menu--close dn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20px" height="20px"><path fill="#ffffff" d="M 4.9902344 3.9902344 A 1.0001 1.0001 0 0 0 4.2929688 5.7070312 L 10.585938 12 L 4.2929688 18.292969 A 1.0001 1.0001 0 1 0 5.7070312 19.707031 L 12 13.414062 L 18.292969 19.707031 A 1.0001 1.0001 0 1 0 19.707031 18.292969 L 13.414062 12 L 19.707031 5.7070312 A 1.0001 1.0001 0 0 0 18.980469 3.9902344 A 1.0001 1.0001 0 0 0 18.292969 4.2929688 L 12 10.585938 L 5.7070312 4.2929688 A 1.0001 1.0001 0 0 0 4.9902344 3.9902344 z"/></svg>
+            </div>
         </div>
 
     </nav>
@@ -289,6 +300,10 @@
         <div class="info__right">
             <img src="img/image4.png" alt="image">
             <button class=" btn btn-play"></button>
+            <video controls="" class="dn" id="video">
+                <source src="video/test.mp4" type="video/mp4">
+
+            </video>
         </div>
     </div>
     <div class="gallery">
@@ -315,8 +330,127 @@
         </div>
     </div>
 
+    <div class="map">
+        <script>
+            (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+                key: "AIzaSyBVJRllu0SjLekDIcWk-y-hpe258rmOKAs",
+                v: "weekly",
+                // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+                // Add other bootstrap parameters as needed, using camel case.
+            });
+        </script>
+        <div id="map"></div>
+    </div>
+
 </main>
-<footer></footer>
+<footer>
+    <div class="footer__top df">
+        <div class="footer__left">
+            <span>01.</span>
+            <h4>Позвонить</h4>
+            <div class="qr df">
+                <div class="qr__left">
+                    <img src="img/qr.svg" alt="qr">
+                    <p>наведите камеру чтобы позвонить!</p>
+                </div>
+                <div class="qr__right">
+                    <h2>+375 (29) 188-11-99</h2>
+                    <p>Пн – Пт: с 9:00 до 18:00</p>
+                </div>
+
+            </div>
+            <button class="btn btn-orange df j-spc-btw"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2427 18.6192C5.70023 18.6192 2.01807 14.937 2.01807 10.3945C2.01807 5.85208 5.70023 2.16992 10.2427 2.16992C14.7851 2.16992 18.4673 5.85208 18.4673 10.3945C18.4673 14.937 14.7851 18.6192 10.2427 18.6192ZM10.2427 17.6322C12.1622 17.6322 14.0032 16.8697 15.3605 15.5123C16.7178 14.155 17.4804 12.3141 17.4804 10.3945C17.4804 8.47499 16.7178 6.63407 15.3605 5.27674C14.0032 3.91941 12.1622 3.15688 10.2427 3.15688C8.32314 3.15688 6.48221 3.91941 5.12488 5.27674C3.76756 6.63407 3.00502 8.47499 3.00502 10.3945C3.00502 12.3141 3.76756 14.155 5.12488 15.5123C6.48221 16.8697 8.32314 17.6322 10.2427 17.6322ZM9.74921 8.74962H10.7362V14.5069H9.74921V8.74962ZM10.2427 7.92716C10.0246 7.92716 9.81536 7.8405 9.66112 7.68626C9.50688 7.53202 9.42023 7.32282 9.42023 7.10469C9.42023 6.88656 9.50688 6.67737 9.66112 6.52313C9.81536 6.36888 10.0246 6.28223 10.2427 6.28223C10.4608 6.28223 10.67 6.36888 10.8243 6.52313C10.9785 6.67737 11.0651 6.88656 11.0651 7.10469C11.0651 7.32282 10.9785 7.53202 10.8243 7.68626C10.67 7.8405 10.4608 7.92716 10.2427 7.92716Z" fill="white"/>
+            </svg>
+                Показы готовых квартир проводятся по предварительной записи!</button>
+        </div>
+        <div class="footer__midd">
+            <span>02.</span>
+            <h4>Заказать звонок</h4>
+            <div class="form">
+                <p>Оставьте свои контактные данные, и мы пригласим вас на экскурсию, где ответим на все ваши вопросы!</p>
+                <form action="">
+                    <div class="form-control df fw">
+                        <input type="tel" placeholder="Номер телефона">
+                        <button type="submit" class="btn btn-green df"> Отправить <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                            <circle cx="2.27979" cy="2.0503" r="2.05616" fill="white"/>
+                        </svg></button>
+                    </div>
+                    <div class="df ">
+
+                        <input type="checkbox">
+                        <label for="">
+
+                            Я согласен(а) с условиями обработки <br> <a href="#">персональных данных</a>
+
+                        </label>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="footer__right">
+            <span>03.</span>
+            <h4>Офис продаж</h4>
+            <div class="office df">
+                <div class="office__left">
+                    <img src="img/office.png" alt="">
+                    <button class="btn btn-outline df">На карте
+                        <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                            <circle cx="2.27979" cy="2.0503" r="2.05616" fill="#161616"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="office__right">
+                    г. Брест, <br>  ул. Карла Маркса, 33
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom df j-spc-btw f-wrap">
+        <div class="footer__bottom--left">
+            <ul class="footer__menu df">
+                <li class="menu__item">
+                    <a href="" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">О проекте</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Преимущества</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Квартиры</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Планировки</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Инфраструктура</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Галерея</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Контакты</a>
+                </li>
+            </ul>
+            <div class="footer__info">
+                <p>ООО "Результативная недвижимость" УНП 193703497.<br>
+                    Лицензия на оказание риэлтерской деятельности выдана <br>
+                    Минюстом от 26.09.2023г. No02240/470 Номер лицензии в ЕРЛ: 48230000078999.
+                </p>
+            </div>
+        </div>
+        <div class="footer__bottom--right ">
+            <div class="footer__social df a-center">
+                <a href=""><img src="img/footer-social1.svg" alt=""></a>
+                <a href=""><img src="img/footer-social2.svg" alt=""></a>
+                <a href=""><img src="img/footer-social3.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</footer>
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/slick.min.js"></script>

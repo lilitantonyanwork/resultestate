@@ -1,0 +1,239 @@
+@media  screen  and (max-width: 1440px){
+
+    nav{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .choose__block, .about, .plans, .info,  .gallery {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .nav__contact{
+        margin-left: auto;
+    }
+    .social{
+        margin-left: 20px;
+    }
+    .info__left:after{
+        background-size: 60%;
+        background-repeat: no-repeat;
+        bottom: -50px;
+    }
+    .info__left:before{
+        background-size: 60%;
+        background-repeat: no-repeat;
+        top: -20px;
+    }
+
+}
+@media screen and (max-width: 1300px) {
+    .nav__tel{
+        font-size: 16px;
+    }
+    .menu__link{
+        font-size: 14px;
+    }
+    .menu{
+        align-items: center;
+    }
+    nav .btn-yellow{
+        font-size: 12px;
+        width: auto;
+    }
+    .choose__right{
+        width: calc(100%/2 - 32px);
+    }
+}
+@media  screen  and (max-width: 1024px){
+    .mobile__menu--open{
+        display: block;
+    }
+    .nav__menu{
+        display: none;
+    }
+    .social{
+        display: none;
+    }
+    nav .btn-yellow{
+        display: none;
+    }
+    .footer__menu{
+        flex-wrap: wrap;
+    }
+    .plans__slider{
+        max-width: 500px;
+        width: 100%;
+    }
+    .plans__right{
+        width: 40%;
+
+    }
+    .plans__right p, .plans__right ul{
+        font-size: 18px;
+    }
+    .features__list{
+        justify-content: center;
+    }
+    .features__item{
+        width: 20%;
+    }
+    nav.opened{
+        background: #242424;
+        flex-wrap: wrap;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        box-sizing: border-box;
+        z-index: 9;
+        border-bottom: 0;
+    }
+    nav.opened .nav__logo{
+        width: 100%
+    }
+    nav.opened .nav__menu{
+        display: flex;
+        width: 100%;
+    }
+    nav.opened .nav__menu .menu{
+        flex-direction: column;
+
+        width: 100%;
+
+        background: #242424;
+
+    }
+    nav.opened .nav__tel{
+        display: none;
+    }
+    nav.opened .mobile__menu--close{
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+    .nav.opened .nav__contact{
+        width: 100%;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    nav.opened .social{
+        display: flex;
+
+        width: 100%;
+
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        background: #242424;
+    }
+    nav.opened .social__icon{
+        width: auto;
+        height: auto;
+    }
+    nav.opened .btn-yellow{
+
+        display: flex;
+
+    }
+    .info__left:after, .info__left:before{
+        background-size: 50%;
+        background-repeat: no-repeat;
+    }
+    .info__left p   {
+        padding-top: 30px;
+    }
+    .footer__top{
+        flex-wrap: wrap;
+    }
+    .footer__left{
+        max-width: 100%;
+    }
+    .footer__midd{
+        max-width: 100%;
+    }
+}
+@media  screen  and (max-width: 900px){
+    .banner h1{
+        font-size: 48px;
+        line-height: 57px;
+    }
+    .section__title{
+        font-size: 28px;
+    }
+    .about p{
+        font-size: 18px;
+    }
+    .features__item h4{
+        font-size: 18px;
+    }
+    .floor{
+        width: 50px;
+    }
+    .area__actions{
+        flex-direction: column;
+    }
+    .plans__left{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .plans__right{
+        width: 100%;
+        padding-top: 32px;
+    }
+    .info__left{
+        width: 100%;
+    }
+    .info__left p{
+        font-size: 18px;
+    }
+    .info__right{
+        margin: 0 auto;
+    }
+
+    .footer__right{
+        margin-bottom: 32px;
+    }
+    .footer__menu{
+        justify-content: center;
+    }
+    .footer__bottom--right{
+
+        margin: 20px auto 0;
+    }
+    .apartment__btn{
+        font-size: 16px;
+    }
+}
+@media  screen  and (max-width: 768px){
+    .choose__left{
+        width: 100%;
+    }
+    .choose__right{
+        width: 100%;
+    }
+    .features__item {
+        width: 40%;
+    }
+    iframe{
+        height: 300px;
+    }
+    header{
+        margin-top: 0;
+    }
+
+}
+@media  screen  and (max-width: 600px){
+    .info:before{
+        width: 100%;
+    }
+    .info__right{
+        width: 100%;
+    }
+    .banner{
+        padding: 50px 20px;
+    }
+}
+@media  screen  and (max-width: 480px){
+
+}
