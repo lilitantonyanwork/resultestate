@@ -264,6 +264,7 @@ nav{
 .apartment-selected{
     background: #D76F30;
     color: #fff;
+    position: relative;
 }
 .apartment__img{
     margin-top: -20px;
@@ -296,6 +297,7 @@ nav{
 .floor--selected{
     background: #D76F30;
     color: #fff;
+    position: relative;
 }
 .apartment__floor--list{
     gap: 10px;
@@ -324,6 +326,7 @@ nav{
     background: #D76F30;
     border-radius: 8px;
     color: #fff;
+    position: relative;
 
 }
 .ui-widget.ui-widget-content{
@@ -612,7 +615,7 @@ footer{
     padding: 32px;
     margin-top: 32px;
 }
-.btn:before{
+.btn:before, .apartment-selected:before, .floor--selected:before, .room__active:before{
     content: '';
     position: absolute;
     top: 0;
