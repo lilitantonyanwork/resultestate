@@ -25,7 +25,8 @@
 <header>
     <nav class="nav df a-center">
         <div class="nav__logo">
-            <a href="#"><img src="img/logo.svg" alt="logo"></a>
+            <a href="#"><img class="light" src="img/logo.svg" alt="logo"></a>
+            <a href="#"><img class="dark dn" src="img/logo-dark.svg" alt="logo"></a>
         </div>
         <div class="nav__menu">
             <ul class="menu df">
@@ -68,11 +69,22 @@
             </div>
             <a class="nav__tel" href="tel:+375 (29) 188-11-99">+375 (29) 188-11-99</a>
             <button class="btn btn-yellow">Перезвоните мне</button>
-            <div class="mobile__menu--open dn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M3 4H21" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                <path d="M8 12H21" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                <path d="M3 20H21" stroke="white" stroke-width="2" stroke-linecap="round"/>
-            </svg></div>
+            <div class="mobile__menu--open dn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <g filter="url(#filter0_b_4305_2873)">
+                        <rect width="40" height="40" rx="20" fill="#172D13"/>
+                        <path d="M11 12H29M16 20H29M11 28H29" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round"/>
+                    </g>
+                    <defs>
+                        <filter id="filter0_b_4305_2873" x="-4" y="-4" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="2"/>
+                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_4305_2873"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_4305_2873" result="shape"/>
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
             <div class="mobile__menu--close dn">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20px" height="20px"><path fill="#ffffff" d="M 4.9902344 3.9902344 A 1.0001 1.0001 0 0 0 4.2929688 5.7070312 L 10.585938 12 L 4.2929688 18.292969 A 1.0001 1.0001 0 1 0 5.7070312 19.707031 L 12 13.414062 L 18.292969 19.707031 A 1.0001 1.0001 0 1 0 19.707031 18.292969 L 13.414062 12 L 19.707031 5.7070312 A 1.0001 1.0001 0 0 0 18.980469 3.9902344 A 1.0001 1.0001 0 0 0 18.292969 4.2929688 L 12 10.585938 L 5.7070312 4.2929688 A 1.0001 1.0001 0 0 0 4.9902344 3.9902344 z"/></svg>
             </div>
@@ -80,6 +92,7 @@
 
     </nav>
     <div class="banner">
+        <img src="img/banner.png" class="dn" alt="">
         <h1>Новый ЖИЛОЙ комплекс «Чайка» </h1>
         <p>Старт продаж первых двух домов. Успейте приобрести квадратные метры в данном ЖК</p>
         <button class="btn btn-yellow">Забронировать</button>
@@ -87,17 +100,23 @@
 </header>
 <main>
     <div class="about">
+        <div class="about__top">
         <h2 class="section__title">О ПРОЕКТЕ ЖК «Чайка»</h2>
         <p>Новый жилой комплекс будет включать в себя 8 домов — от 10 до 17 этажей, которые будут возведены по современным технологиям монолитного домостроения, что обеспечит долговечность, морозостойкость и экологичность зданий. При этом отделка корпусов и благоустройство территории будут выдержаны в едином стиле в светлых и благородных тонах, что придаст всему комплексу ощущение цельности и уюта, а ряд эксклюзивных деталей, предусмотренных проектом, подчеркнут его эстетический характер. В частности, дворовые пространства будут организованы по принципу «двор без машин».</p>
-        <p><strong>+375 (29) 188-11-99</strong>
+        <p><strong><a href="tel:+375 (29) 188-11-99">+375 (29) 188-11-99</a></strong>
             (получить консультацию)</p>
         <p class="df    a-center"><span class="line"></span>ЛИБО ПРИЕХАТЬ ПО АДРЕСУ г. Брест, ул. Карла Маркса, 33</p>
+        </div>
+        <div class="about__bottom">
+            <img src="img/image1.png" alt="img">
+        </div>
     </div>
-    <div class="image-banner">
-        <img src="img/image1.png" alt="img">
-    </div>
+
     <div class="features">
         <h2 class="section__title">ПРЕИМУЩЕСТВА ЖИЛОГО КОМПЛЕКСА</h2>
+        <div class="features__banner dn">
+            <img src="img/features-banner.png" alt="">
+        </div>
         <div class="features__list df f-wrap">
             <div class="features__item">
                 <div class="features__img">

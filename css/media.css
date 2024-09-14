@@ -1,5 +1,7 @@
 @media  screen  and (max-width: 1440px){
-
+    header:before{
+        display: none;
+    }
     nav{
         padding-left: 20px;
         padding-right: 20px;
@@ -150,6 +152,30 @@
     .footer__midd{
         max-width: 100%;
     }
+    header{
+        margin-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    nav{
+        background: #fff;
+    }
+    .dark{
+        display: flex;
+    }
+    .light{
+        display: none;
+    }
+    .nav__tel{
+        color: #172D13;
+
+    }
+    nav.opened .dark{
+        display: none;
+    }
+    nav.opened .light{
+        display: flex;
+    }
 }
 @media  screen  and (max-width: 900px){
     .banner h1{
@@ -194,15 +220,23 @@
     .footer__right{
         margin-bottom: 32px;
     }
-    .footer__menu{
-        justify-content: center;
-    }
+
     .footer__bottom--right{
 
         margin: 20px auto 0;
     }
     .apartment__btn{
         font-size: 16px;
+    }
+    .footer__menu{
+        flex-direction: column;
+    }
+    .footer__bottom{
+        position: relative;
+    }
+    .footer__social{
+        position: absolute;
+        top: 20px;
     }
 }
 @media  screen  and (max-width: 768px){
@@ -231,9 +265,138 @@
         width: 100%;
     }
     .banner{
-        padding: 50px 20px;
+        padding: 0 ;
     }
+    nav{
+        padding-right: 15px ;
+    }
+
+    .banner img{
+        display: block;
+    }
+    header{
+        background:none;
+    }
+    .banner h1{
+        color: #172D13;
+        font-size: 32px;
+        line-height: 39px;
+        margin-top: 20px;
+        margin-bottom: 12px;
+        padding: 0 20px;
+
+    }
+    .banner p{
+        color: #172D13;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+    .banner .btn-yellow{
+        width: calc(100% - 40px);
+        margin: 0 auto 60px;
+        font-size: 15px;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    .about__top{
+        border-radius: 18px;
+        padding: 20px 20px 60px;
+    }
+    .features__banner{
+        display: block;
+        text-align: center;
+    }
+    .features__item{
+        display: none;
+    }
+    .features__item:first-child, .features__item:nth-child(2){
+        display: block;
+    }
+    .apartments__banner{
+        display: none;
+    }
+    .choose__block .section__title{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    .choose__left{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .apartment__img{
+        margin-top: 0;
+    }
+    .floor {
+        width: 46px;
+    }
+    .choose__apartments{
+        margin-bottom: 60px;
+    }
+    .plans-overlay:after{
+        background: url('../img/plans-right-bg.svg') right bottom;
+        bottom: 0;
+        background-size: 58%;
+        background-repeat: no-repeat;
+        opacity: 0.3;
+    }
+    .section__title, .plans__right h4{
+        font-size: 28px;
+        text-align: center;
+    }
+    .plans .section__title{
+        margin-bottom: 0;
+    }
+    .plans__right .btn-orange{
+        font-size: 16px;
+    }
+    .info .section__title{
+        order: 1;
+        margin-bottom: 0;
+    }
+    .info .info__left{
+        order: 3;
+    }
+    .info .info__right{
+        order: 2;
+    }
+    .info__left p{
+        font-size: 16px;
+    }
+    .info__left:after{
+        display: none;
+    }
+    .gallery .section__title{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .gallery .slick-next, .gallery .slick-prev{
+        width: 40px;
+        height: 40px;
+    }
+    .gallery .slick-next{
+        right: 0;
+    }
+    .gallery .slick-prev{
+        left: 0;
+    }
+    .gallery{
+        padding: 0;
+    }
+    .qr{
+        flex-direction: column;
+    }
+    footer{
+        padding: 20px;
+    }
+
 }
-@media  screen  and (max-width: 480px){
+@media  screen  and (max-width: 360px){
 
 }

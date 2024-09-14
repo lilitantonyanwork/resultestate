@@ -40,6 +40,16 @@ header{
     margin: 30px auto 0;
     border-radius: 18px;
     background-size: cover;
+    position: relative;
+}
+header:before{
+    content: '';
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background: #EBEFF2;
+    position: absolute;
+    z-index: -1;
 }
 nav{
     padding: 20px 64px;
@@ -87,6 +97,7 @@ nav{
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .btn-yellow{
@@ -125,7 +136,7 @@ nav{
     font-size: 18px;
     height: 60px;
 }
-.about{
+.about__top{
     background: #EBEFF2;
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
@@ -159,7 +170,7 @@ nav{
 
 }
 
-.about strong{
+.about a{
     color: #172D13;
     font-weight: 600;
 
@@ -176,7 +187,7 @@ nav{
     font-weight: 500;
     margin-bottom: 0;
 }
-.image-banner{
+.about__bottom{
     margin: 0 auto 32px;
     max-width: 1442px;
 }
@@ -265,6 +276,8 @@ nav{
     background: #D76F30;
     color: #fff;
     position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 .apartment__img{
     margin-top: -20px;
@@ -298,6 +311,9 @@ nav{
     background: #D76F30;
     color: #fff;
     position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 5px;
 }
 .apartment__floor--list{
     gap: 10px;
@@ -327,6 +343,8 @@ nav{
     border-radius: 8px;
     color: #fff;
     position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
 
 }
 .ui-widget.ui-widget-content{
