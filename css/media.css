@@ -1,7 +1,5 @@
 @media  screen  and (max-width: 1440px){
-    header:before{
-        display: none;
-    }
+
     nav{
         padding-left: 20px;
         padding-right: 20px;
@@ -26,6 +24,9 @@
         background-repeat: no-repeat;
         top: -20px;
     }
+    .about{
+        padding: 0;
+    }
 
 }
 @media screen and (max-width: 1300px) {
@@ -45,6 +46,7 @@
     .choose__right{
         width: calc(100%/2 - 32px);
     }
+
 }
 @media  screen  and (max-width: 1024px){
     .mobile__menu--open{
@@ -176,6 +178,7 @@
     nav.opened .light{
         display: flex;
     }
+
 }
 @media  screen  and (max-width: 900px){
     .banner h1{
@@ -238,6 +241,7 @@
         position: absolute;
         top: 20px;
     }
+
 }
 @media  screen  and (max-width: 768px){
     .choose__left{
@@ -395,7 +399,9 @@
     footer{
         padding: 20px;
     }
-
+    header:before{
+        display: none;
+    }
 }
 @media  screen  and (max-width: 360px){
 
