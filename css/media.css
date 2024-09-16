@@ -160,29 +160,14 @@
         border-top-right-radius: 0;
     }
     nav{
-        background: #fff;
+        border-bottom: 0;
     }
-    .dark{
-        display: flex;
-    }
-    .light{
-        display: none;
-    }
-    .nav__tel{
-        color: #172D13;
 
-    }
-    nav.opened .dark{
-        display: none;
-    }
-    nav.opened .light{
-        display: flex;
-    }
 
 }
 @media  screen  and (max-width: 900px){
     .banner h1{
-        font-size: 48px;
+        font-size: 28px;
         line-height: 57px;
     }
     .section__title{
@@ -269,21 +254,19 @@
         width: 100%;
     }
     .banner{
-        padding: 0 ;
+        padding: 20px 0 193px ;
     }
     nav{
         padding-right: 15px ;
     }
+    .nav__tel{
+        display: none;
+    }
 
-    .banner img{
-        display: block;
-    }
-    header{
-        background:none;
-    }
+
+
     .banner h1{
-        color: #172D13;
-        font-size: 32px;
+        font-size: 28px;
         line-height: 39px;
         margin-top: 20px;
         margin-bottom: 12px;
@@ -291,7 +274,6 @@
 
     }
     .banner p{
-        color: #172D13;
         font-size: 16px;
         line-height: 19px;
         margin-bottom: 20px;
@@ -305,30 +287,99 @@
 
     .about{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
 
     }
     .about__top{
         border-radius: 18px;
-        padding: 20px 20px 60px;
+        padding: 40px 20px 0;
+        background: transparent;
     }
-    .features__banner{
-        display: block;
-        text-align: center;
+
+    .section__title{
+        font-size: 24px;
     }
-    .features__item{
-        display: none;
+    .about p{
+        font-size: 16px;
+        line-height: 19px;
     }
-    .features__item:first-child, .features__item:nth-child(2){
-        display: block;
+    .about a{
+            width: 100%;
+            display: block;
+            font-size: 20px;
+        margin-bottom: 12px;
     }
-    .apartments__banner{
-        display: none;
+    .about p:last-child{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+
+    .apartments__banner img{
+       height: 328px;
+        object-fit: cover;
+        border-radius: 18px;
     }
     .choose__block .section__title{
         text-align: center;
         margin-top: 50px;
         margin-bottom: 0;
+    }
+    .features__item h4{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .features__item{
+        padding-top: 0;
+    }
+    .choose__block .section__title{
+        display: none;
+    }
+    .choose__left .section__title{
+        display: flex;
+        padding: 0;
+        font-size: 18px;
+        text-align: left;
+        order: 2;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    .choose__block{
+        margin-top: 40px;
+        padding-top: 20px;
+        background: #EBEFF2;
+        border-radius: 18px;
+        padding-bottom: 24px;
+    }
+    .area__actions .btn-green{
+        width: 119px;
+        font-size: 14px;
+        padding: 14px 16px;
+        box-sizing: border-box;
+    }
+    .area__actions .btn-orange{
+        padding: 14px 16px;
+        box-sizing: border-box;
+        font-size: 14px;
+
+    }
+    .area__actions{
+        flex-direction: row;
+        gap: 14px;
+
+    }
+
+    .choose__apartments{
+        background: transparent;
+    }
+
+    .apartment__img{
+        order: 3;
+    }
+    .apartment{
+        order: 1;
     }
     .choose__left{
         display: flex;
@@ -341,18 +392,31 @@
         width: 46px;
     }
     .choose__apartments{
-        margin-bottom: 60px;
+        margin-bottom: 0;
+    }
+    .plans__right h4{
+        font-size: 18px;
+        text-align: left;
+        padding: 0!important;
+        margin-bottom: 20px;
+    }
+    .plans__right{
+        padding-top: 0;
+    }
+    .plans__right p, .plans__right ul{
+        font-size: 16px;
+        line-height: 19px;
     }
     .plans-overlay:after{
         background: url('../img/plans-right-bg.svg') right bottom;
         bottom: 0;
-        background-size: 58%;
+        background-size: 100%;
         background-repeat: no-repeat;
         opacity: 0.3;
     }
     .section__title, .plans__right h4{
-        font-size: 28px;
-        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .plans .section__title{
         margin-bottom: 0;
@@ -360,38 +424,63 @@
     .plans__right .btn-orange{
         font-size: 16px;
     }
+    .info{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .info .section__title{
         order: 1;
         margin-bottom: 0;
     }
     .info .info__left{
         order: 3;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .info .info__right{
         order: 2;
     }
     .info__left p{
         font-size: 16px;
+        line-height: 24px;
     }
     .info__left:after{
-        display: none;
+        background: url('../img/comment-1.svg') no-repeat bottom right;
+        transform: none;
+        right: 16px;
     }
     .gallery .section__title{
         text-align: center;
         margin-top: 50px;
     }
     .gallery .slick-next, .gallery .slick-prev{
-        width: 40px;
-        height: 40px;
+        width: 32px;
+        height: 32px;
     }
     .gallery .slick-next{
-        right: 0;
+        right: -16px;
     }
     .gallery .slick-prev{
-        left: 0;
+        left: -16px;
     }
-    .gallery{
-        padding: 0;
+    .footer__top{
+        gap: 30px;
+    }
+    .qr__left{
+        display: none;
+    }
+    .footer__left .btn-orange{
+        margin-bottom: 0;
+    }
+    .footer__menu{
+        gap: 20px;
+    }
+    .footer__social a:after{
+        display: none;
+    }
+    .footer__social{
+        gap: 5px;
+        right: 0;
     }
     .qr{
         flex-direction: column;

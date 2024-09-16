@@ -934,3 +934,12 @@ footer{
     right: 13%;
     top: 57%;
 }
+.apartment__floor--list.close{
+    display: none;
+}
+.apartment__list.close{
+    display: none;
+}
+.apartment__select.close .btn-dropdown{
+    transform: rotate(180deg) ;
+}

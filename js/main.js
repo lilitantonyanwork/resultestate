@@ -40,11 +40,19 @@ $(function (){
         focusOnSelect: true,
         responsive: [
             {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 3,
                 }
-            },]
+            },
+
+        ]
     });
 
     $('.gallery-list').slick({
@@ -198,4 +206,8 @@ $(function (){
 
     }
 
+    $('.apartment__select').on('click',function (){
+        $(this).toggleClass('close')
+        $(this).siblings('div').toggleClass('close');
+    })
 })
