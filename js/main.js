@@ -210,4 +210,30 @@ $(function (){
         $(this).toggleClass('close')
         $(this).siblings('div').toggleClass('close');
     })
+    $('.clear').on('click',function (){
+        resetSlider($('#slider-price'));
+        resetSlider($('#slider-area'));
+        $('.apartment__btn').removeClass('apartment-selected');
+        $('.floor').removeClass(' floor--selected');
+        $('.room').removeClass('room__active');
+        $('.apartment__btn.default').addClass('apartment-selected');
+        $('.floor.default').addClass('floor--selected');
+        $('.room.default').addClass('room__active');
+
+    })
+    function resetSlider(sl) {
+            var options = sl.slider( 'option' );
+        sl.slider( 'values', [ options.min, options.max ] );
+      sl.siblings('p').find('.start').text( options.min);
+      sl.siblings('p').find('.end').text( options.max);
+
+    }
+    $('.ClickButtonsBig-button').on('click',function (){
+        $('.ClickButtonsBig-button').removeClass('active');
+        $(this).addClass('active')
+    });
+    $('.btn-orange, .btn-yellow').on('click',function (){
+        $('.CallMe_back_modal').css('display','flex')
+    })
+
 })

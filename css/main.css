@@ -943,3 +943,370 @@ footer{
 .apartment__select.close .btn-dropdown{
     transform: rotate(180deg) ;
 }
+.CallMe_back_modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #6c6c6cc7;
+    z-index: 12121;
+    overflow: auto;
+    /*display: none;*/
+}
+
+.CallMe_back_modal_body {
+    width: 100%;
+    background: white;
+    box-shadow: 0px 22.07px 55.18px -11.04px #585c5f29;
+    max-height: 100vh;
+    overflow: auto;
+    max-width: 740px;
+    /* height: 595px; */
+    overflow: auto;
+    border-radius: 16px;
+    padding-bottom: 15px;
+}
+.callMe_header {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+.header_bodyBig {
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+    margin: auto;
+    margin-top: 20px;
+    color: black;
+}
+.navbar a {
+    text-decoration: none;
+}
+.headerText h3 {
+    font-family: Montserrat;
+    font-size: 22.07px;
+    font-weight: 600;
+    line-height: 33.11px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    margin-bottom: 6px;
+    margin-top: 0;
+}
+.headerText span {
+    font-family: Montserrat;
+    font-size: 19.31px;
+    font-weight: 400;
+    line-height: 27.59px;
+    letter-spacing: -0.03em;
+    text-align: left;
+}
+.header_bodyBig .bx-x {
+    font-size: 27px;
+}
+.lineBottom {
+    width: 100%;
+    height: 1px;
+    border-top: 1.38px solid var(--stroke-soft-200, #e2e4e9);
+}
+.ImgDesign {
+    position: absolute;
+    width: 26%;
+    margin-top: -34px;
+}
+.ClickButtonsBig button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 2.76px 5.52px 0px #ffffff05;
+    background-color: #303030;
+    height: 39.04px;
+    border-radius: 4px;
+    font-family: Inter;
+    font-size: 19.31px;
+    font-weight: 500;
+    line-height: 27.59px;
+    letter-spacing: -0.006em;
+    text-align: left;
+    color: white;
+    border: 1px solid #303030;
+}
+.ClickButtonsBig {
+    display: grid;
+    grid-template-columns: 2fr 1.6fr 1.3fr 1fr;
+    width: 98%;
+    margin: auto;
+    /* margin-top: 35px; */
+    position: relative;
+    z-index: 1112;
+    gap: 5px;
+}
+.bigWith_back {
+    width: 92%;
+    margin: auto;
+    background: #e2e4e9;
+
+    margin-top: 26px;
+    min-height: 49px;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    align-items: center;
+}
+.inputGrey {
+    display: flex;
+    align-items: center;
+    width: 98% !important;
+    margin: auto;
+    border: 1px solid var(--stroke-soft-200, #f5f5f5);
+    background: #f5f5f5;
+    height: 50px;
+    border-radius: 6px;
+    padding-left: 17px;
+    gap: 11px;
+    position: relative;
+    z-index: 1;
+    margin-top: 4px;
+}
+.inputGrey .bx-user {
+    font-size: 27px;
+    color: var(--icon-soft-400, #868c98);
+}
+
+.inputGrey input {
+    width: 88% !important;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: Inter;
+    font-size: 19.31px;
+    font-weight: 400;
+    line-height: 27.59px;
+    letter-spacing: -0.006em;
+    text-align: left;
+}
+.extraGreyInp:hover {
+    background-color: #cacaca;
+}
+.inputWith_login label {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.78px;
+    letter-spacing: -0.006em;
+    text-align: left;
+    color: white;
+}
+.inputWith_login {
+    width: 92%;
+    margin: auto;
+    margin-top: 31px;
+}
+.inputWith_login label span {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    letter-spacing: -0.006em;
+    text-align: left;
+}
+
+.inputWith_login1 label {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.78px;
+    letter-spacing: -0.006em;
+    text-align: left;
+    color: white;
+}
+.inputWith_login1 .Country_input {
+    background: #e2e4e9;
+}
+.inputWith_login1 .Country_input .bx-chevron-down {
+    color: black;
+}
+.inputWith_login1 {
+    width: 92%;
+    margin: auto;
+    margin-top: 28px;
+}
+.inputWith_login1 label span {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    letter-spacing: -0.006em;
+    text-align: left;
+}
+
+.callModal_bottom h4 {
+    color: white;
+    width: 92%;
+    margin: auto;
+    font-family: Inter;
+    font-size: 19.31px;
+    font-weight: 400;
+    line-height: 27.59px;
+    letter-spacing: -0.006em;
+    text-align: left;
+    margin-top: 27px;
+}
+.FullWidth_btn {
+    overflow: hidden;
+    position: relative;
+}
+.FullWidth_btn button {
+    width: 97%;
+    height: 43px;
+    background: none;
+    border-radius: 10px;
+    border: 1px solid #f8b806;
+    transition: 0.3s;
+}
+.FullWidth_btn button:hover {
+    border: 1px solid black;
+}
+.ClickButtonsBig-button.active {
+    background-color: #424242 !important;
+    color: #fff !important;
+}
+.ClickButtonsBig-button {
+    background-color: rgb(226, 228, 233) !important;
+    border: 1px solid rgb(226, 228, 233) !important;
+    color: black !important;
+}
+
+.Country_input {
+    background: white;
+    width: 77%;
+    padding-left: 10px;
+    height: 56px;
+    border-radius: 10px;
+    margin-top: 21px;
+    outline: none;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 77px 50px auto;
+    align-items: center;
+    position: relative;
+}
+.Country_input2 {
+    background: none;
+    width: 100%;
+    padding-left: 0px;
+    height: 56px;
+    border-radius: 10px;
+    margin-top: 0px;
+    outline: none;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 77px 50px auto;
+    align-items: center;
+    position: relative;
+}
+.Country_input__modal {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+    border-radius: 10px;
+    background: #1e1e1e;
+    overflow: hidden;
+    display: none;
+}
+.Country_input__modal__option {
+    width: 90%;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 5%;
+    cursor: pointer;
+    height: 56px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+.Country_input__modal__option:hover {
+    background-color: #242424;
+}
+.Country_input__modal__select {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.Country_input__modal__active {
+    width: 90%;
+    margin: auto;
+    height: 56px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+    cursor: pointer;
+    color: white;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Country_input_action {
+    display: flex;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+.Country_input input {
+    background-color: #24242400;
+    border: none;
+    outline: none;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    line-height: 21.94px;
+
+    color: #858585;
+}
+.Country_input__phone {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+    text-align: center;
+    color: #858585;
+}
+.universal__title_second {
+    color: white;
+}
+.universal__title_second span {
+    color: #f8a606;
+}
+.FullWidth_btn {
+    width: 92%;
+    margin: auto;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.68px;
+    background: #f8b806;
+    height: 56px;
+    border-radius: 10px;
+    margin-top: 25px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
