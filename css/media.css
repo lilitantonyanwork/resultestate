@@ -528,4 +528,7 @@
     object-fit: cover;
     object-position: 88% 100%;
 }
+header{
+    background: url('../img/header-mob.png');
+}
 }
