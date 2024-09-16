@@ -485,7 +485,7 @@
     .qr{
         flex-direction: column;
     }
-    .banner p{
+    .banner p, .banner h1{
         max-width: 250px;
     }
     footer{
