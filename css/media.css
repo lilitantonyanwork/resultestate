@@ -522,6 +522,14 @@
     #map{
         height: 328px!important;
     }
+    .ClickButtonsBig {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 @media  screen  and (max-width: 360px){
     .point__right {
