@@ -190,6 +190,7 @@ nav{
 .about__bottom{
     margin: 0 auto 32px;
     max-width: 1442px;
+    position: relative;
 }
 .features{
     padding-top: 64px;
@@ -893,4 +894,43 @@ footer{
 .tn-elem__4346096441649723484272 {
     mix-blend-mode: difference;
     pointer-events: none;
+}
+.point{
+    width: 49px;
+    height: 38px;
+    border-radius: 89px;
+    background: #D76F30;
+    color: #fff;
+    font-size: 17px;
+    line-height: 25px;
+    position: absolute;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    z-index: 2;
+}
+.point:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    width: 76px;
+    height: 76px;
+    border-radius: 100%;
+    opacity: 45%;
+    background: #D76F30;
+
+}
+.point__left{
+    right: 27%;
+    top: 45%;
+}
+.point__right{
+    right: 13%;
+    top: 57%;
 }

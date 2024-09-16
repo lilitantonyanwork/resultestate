@@ -402,7 +402,38 @@
     header:before{
         display: none;
     }
+    .point{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        font-size: 12px;
+        line-height: 19px;
+    }
+    .point:before{
+        width: 50px;
+        height: 50px;
+    }
+    .point__right {
+        right: 11%;
+        top: 45%;
+    }
+    .point__left {
+        right: 27%;
+        top: 32%;
+    }
 }
 @media  screen  and (max-width: 360px){
-
+    .point__right {
+        right: 13%;
+        top: 45%;
+    }
+    .point__left {
+        right: 42%;
+        top: 34%;
+    }
+.about__bottom img{
+    height: 328px;
+    object-fit: cover;
+    object-position: 88% 100%;
+}
 }
