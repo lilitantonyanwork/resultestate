@@ -807,7 +807,60 @@
 <!--<script src="https://api-maps.yandex.ru/2.1/?apikey=2d4d0fe9-daf7-4436-9003-b491bcabe3b8&lang=ru_RU"></script>-->
 <script src="https://api-maps.yandex.ru/3.0/?apikey=2d4d0fe9-daf7-4436-9003-b491bcabe3b8&lang=ru_RU" type="text/javascript"></script>
 <script>
-    console.log('aaaa')
+    console.log('bbbb')
+    let mapdark = [
+        {
+            "tags": {
+                "any": [
+                    "road_7"
+                ]
+            },
+            "stylers": {
+                "visibility": "off"
+            }
+        },
+        {
+            "tags": {
+                "any": [
+                    "road_construction",
+                    "road_minor",
+                    "road_unclassified",
+                    "path",
+                    "road_limited"
+                ]
+            },
+            "stylers": {
+                "visibility": "off"
+            }
+        },
+        {
+            "tags": {
+                "any": [
+                    "address",
+                    "road_7",
+                    "road_limited",
+                    "road_unclassified",
+                    "road_minor",
+                    "road_construction",
+                    "path"
+                ]
+            },
+            "elements": "label",
+            "stylers": {
+                "visibility": "off"
+            }
+        },
+        {
+            "tags": {
+                "any": [
+                    "transit"
+                ]
+            },
+            "stylers": {
+                "visibility": "off"
+            }
+        }
+    ]
     window.map = null;
     // Главная функция, вызывается при запуске скрипта
     main();
@@ -860,6 +913,9 @@
         map.addChild(new YMapMarker({coordinates: CENTER_COORDINATES}));
         // Добавление маркера на карту
         map.addChild(new YMapMarker({coordinates: MARKER_COORDINATES}, imgContainer));
+        map.addChild(new YMapDefaultSchemeLayer({
+            theme: "dark", customization: mapdark
+        }));
     }
 </script>
 
