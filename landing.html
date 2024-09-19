@@ -804,27 +804,15 @@
 <script src="js/jquery.ui.touch-punch.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<!--<script src="https://api-maps.yandex.ru/2.1/?apikey=2d4d0fe9-daf7-4436-9003-b491bcabe3b8&lang=ru_RU"></script>-->
+<script src="https://api-maps.yandex.ru/v3/?apikey=2d4d0fe9-daf7-4436-9003-b491bcabe3b8&lang=ru_RU"></script>
 <script>
-    ymaps.ready(init);
-
-    function init () {
-        var myMap = new ymaps.Map("mymap", {
-                center: [53.889582, 27.523554],
-                zoom: 15.5,
-                theme: 'dark'
-            }
-            );
-        myMap.controls.remove('searchControl'); // удаляем поиск
-        myMap.controls.remove('trafficControl'); // удаляем контроль трафика
-        myMap.controls.remove('typeSelector'); // удаляем тип
-        myMap.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
-        myMap.controls.remove('zoomControl'); // удаляем контрол зуммирования
-        myMap.controls.remove('rulerControl'); // удаляем контрол правил
-        myMap.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
-
-    }
-
+    const map = new ymaps3.YMap(document.getElementById('mymap'), {
+        location: {
+            center: [37.64, 55.76],
+            zoom: 10
+        }
+    });
 </script>
 
 </body>
