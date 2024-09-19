@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result estate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body class="landing">
+<header>
+    <nav class="nav df a-center">
+        <div class="nav__logo">
+            <a href="#"><img class="light" src="img/logo.svg" alt="logo"></a>
+            <p>Продажа и покупка недвижимости в Минске</p>
+
+        </div>
+        <div class="nav__menu">
+            <ul class="menu df">
+                <li class="menu__item">
+                    <a href="" class="menu__link">О проекте</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Преимущества</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Квартиры</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Паркинг</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Планировки</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Жизнь в ЖК</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav__contact df">
+            <a class="nav__tel" href="tel:+375 (29) 188-55-99">+375 (29) 188-55-99</a>
+
+            <div class="social df">
+                <a href="#" class="social__icon ">
+                    <img src="img/landing/social1.svg" alt="social">
+                </a>
+                <a href="#" class="social__icon social__icon--inst">
+                    <img src="img/landing/social2.svg" alt="social">
+
+                </a>
+                <a href="#" class="social__icon social__icon--tg">
+                    <img src="img/landing/social3.svg" alt="social">
+
+                </a>
+            </div>
+            <button class="btn btn-orange">Перезвоните мне</button>
+            <div class="mobile__menu--open dn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                    <circle cx="28" cy="28" r="28" fill="white"/>
+                    <path d="M19 28H37" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19 22H37" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M26 34H37" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="mobile__menu--close dn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20px" height="20px"><path fill="#ffffff" d="M 4.9902344 3.9902344 A 1.0001 1.0001 0 0 0 4.2929688 5.7070312 L 10.585938 12 L 4.2929688 18.292969 A 1.0001 1.0001 0 1 0 5.7070312 19.707031 L 12 13.414062 L 18.292969 19.707031 A 1.0001 1.0001 0 1 0 19.707031 18.292969 L 13.414062 12 L 19.707031 5.7070312 A 1.0001 1.0001 0 0 0 18.980469 3.9902344 A 1.0001 1.0001 0 0 0 18.292969 4.2929688 L 12 10.585938 L 5.7070312 4.2929688 A 1.0001 1.0001 0 0 0 4.9902344 3.9902344 z"/></svg>
+            </div>
+        </div>
+
+    </nav>
+    <div class="banner">
+        <h1>ЖИЛОЙ РАЙОН «НОВАЯ БОРОВАЯ»</h1>
+        <button class="btn btn-orange">Забронировать</button>
+    </div>
+</header>
+<main>
+    <div class="about">
+        <div class="about__top">
+            <h2 class="section__title">О ПРОЕКТЕ <br>
+                Новая Боровая</h2>
+            <p>Новая Боровая давно превзошла ожидания, став не просто новым, стильным и функциональным районом, а полноценным пространством с современной архитектурой и тщательно продуманной инфраструктурой, где каждый может найти своё место. Это комфортная среда, способствующая самореализации и развитию. Несмотря на уникальные концепции и атмосферу каждого квартала, все они гармонично объединяются в единое городское пространство.</p>
+            <p><strong><a href="tel:+375 (29) 188-55-99">+375 (29) 188-55-99</a></strong>
+                (получить консультацию)</p>
+            <p class="df    a-center"><span class="line"></span>ЛИБО ПРИЕХАТЬ ПО АДРЕСУ Г. МИНСК, УЛ. ДЗЕРЖИНСКОГО, 9</p>
+        </div>
+        <div class="about__bottom">
+            <img src="img/landing/img3.png" alt="img">
+        </div>
+    </div>
+
+    <div class="features">
+        <h2 class="section__title">ПРЕИМУЩЕСТВА ЖИЛОГО КОМПЛЕКСА</h2>
+        <div class="features__banner dn">
+            <img src="img/features-banner.png" alt="">
+        </div>
+        <div class="features__list df f-wrap">
+            <div class="features__item">
+                <div class="features__img">
+                    <img src="img/landing/features1.svg" alt="features">
+                </div>
+                <h4>3 школы
+                    (1 построена)</h4>
+            </div>
+            <div class="features__item">
+                <div class="features__img">
+                    <img src="img/landing/features2.svg" alt="features">
+
+                </div>
+                <h4>7 детских садов
+                    (3 построено)</h4>
+            </div>
+            <div class="features__item">
+                <div class="features__img">
+                    <img src="img/landing/features3.svg" alt="features">
+
+                </div>
+                <h4>Спортивные площадки</h4>
+            </div>
+            <div class="features__item">
+                <div class="features__img">
+                    <img src="img/landing/features4.svg" alt="features">
+
+                </div>
+                <h4>ДЕТСКИЕ
+                    ПЛОЩАДКИ</h4>
+            </div>
+            <div class="features__item">
+                <div class="features__img">
+                    <img src="img/landing/features5.svg" alt="features">
+
+                </div>
+                <h4>Велодорожки
+                    и велобоксы</h4>
+            </div>
+            <div class="features__item">
+                <div class="features__img">
+                    <img src="img/landing/features6.svg" alt="features">
+
+                </div>
+                <h4>Магазины
+                    и кафе</h4>
+            </div>
+            <div class="features__item">
+                <div class="features__img">
+                    <img src="img/landing/features7.svg" alt="features">
+
+                </div>
+                <h4>Центральная площадь и зоны отдыха</h4>
+            </div>
+            <div class="features__item">
+                <div class="features__img">
+                    <img src="img/landing/features8.svg" alt="features">
+
+                </div>
+                <h4>Паркинги
+                    и стоянкиа</h4>
+            </div>
+            <div class="features__item">
+                <div class="features__img">
+                    <img src="img/landing/features9.svg" alt="features">
+
+                </div>
+                <h4>Система PET-FRIENDLY</h4>
+            </div>
+            <div class="features__item">
+                <div class="features__img">
+                    <img src="img/landing/features10.svg" alt="features">
+
+                </div>
+                <h4>Обслуживающая
+                    организация</h4>
+            </div>
+        </div>
+    </div>
+    <div class="choose__apartments">
+        <h2 class="section__title">Центральный парк</h2>
+        <div class='apartments__banner'>
+            <div class="apartments__banner-img">
+
+                <img src="img/landing/img2.png" alt="image2">
+            </div>
+            <div class="apartments__banner-img">
+
+                <img src="img/landing/img2.png" alt="image2">
+            </div>
+            <div class="apartments__banner-img">
+
+                <img src="img/landing/img2.png" alt="image2">
+            </div>
+            <div class="apartments__banner-img">
+
+                <img src="img/landing/img2.png" alt="image2">
+            </div>
+        </div>
+        <div class="choose__block df f-wrap">
+            <h2 class="section__title tl">Подобрать свободную квартиру</h2>
+            <div class="choose__left">
+                <h2 class="section__title tl dn">Подобрать свободную квартиру</h2>
+                <div class="apartment">
+                    <div class="apartment__select df j-spc-btw">
+                        Дом
+                        <button class="btn btn-dropdown">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+                                <path d="M12.1602 6.41L6.50016 0.75L0.840157 6.41L1.55016 7.11L6.50016 2.16L11.4502 7.11L12.1602 6.41Z" fill="#161616"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="apartment__list df  f-wrap">
+                        <div class="apartment__btn">1.1</div>
+                        <div class="apartment__btn ">1.2</div>
+                        <div class="apartment__btn ">1.8</div>
+                        <div class="apartment__btn ">7.13</div>
+                        <div class="apartment__btn ">7.28</div>
+                        <div class="apartment__btn ">7.29</div>
+                        <div class="apartment__btn">7.31</div>
+                        <div class="apartment__btn ">7.33</div>
+                        <div class="apartment__btn">7.36</div>
+                    </div>
+                </div>
+                <div class="apartment__img">
+                    <img src="img/landing/img4.png" alt="image">
+                </div>
+            </div>
+            <div class="choose__right">
+                <div class="apartment__floor apartment__floor--date">
+                    <div class="apartment__select df j-spc-btw ">
+                        Срок сдачи
+                        <button class="btn btn-dropdown">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M18.1602 8.59L12.5002 14.25L6.84016 8.59L7.55016 7.89L12.5002 12.84L17.4502 7.89L18.1602 8.59Z" fill="#161616"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class='apartment__floor--list df f-wrap close '>
+                        <div class="floor">2 квартал 2026 г
+                            </div>
+                        <div class="floor floor--selected default">1 квартал 2026 г</div>
+                        <div class="floor">2 квартал 2025 г</div>
+                        <div class="floor">2 квартал 2026 г</div>
+                        <div class="floor">3 квартал 2025 г</div>
+                        <div class="floor">4 квартал 2025 г</div>
+                        <div class="floor">4 квартал 2025 г</div>
+                    </div>
+                </div>
+                <div class="apartment__room">
+                    <h4 class="apartment__title">Количество комнат</h4>
+                    <div class="room__list df">
+                        <div class="room">1</div>
+                        <div class="room room__active default">2</div>
+                        <div class="room">3</div>
+                        <div class="room">4</div>
+                        <div class="room">5</div>
+                    </div>
+                </div>
+                <div class="apartment__area">
+                    <h4 class="apartment__title">Площадь, м²</h4>
+                    <div id="slider-area"></div>
+                    <p class="df j-spc-btw">
+                        <span class="area__start start">33</span>
+                        <span class="area__end end" >119</span>
+
+                    </p>
+                </div>
+                <div class="apartment__price">
+                    <h4 class="apartment__title">Цена, BYN</h4>
+                    <div id="slider-price"></div>
+                    <p class="df j-spc-btw">
+                        <span class="price__start start">100000</span>
+                        <span class="price__end end">590944</span>
+                    </p>
+
+                </div>
+                <div class="area__actions df j-spc-btw">
+                    <button class="btn btn-green clear">Сбросить</button>
+                    <button class="btn btn-orange">Подобрать варианты</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="choose__apartments">
+
+        <div class="choose__block df f-wrap">
+            <h2 class="section__title tl">Паркинг</h2>
+            <div class="choose__left">
+                <h2 class="section__title tl dn">Подобрать свободную квартиру</h2>
+                <div class="apartment">
+                    <div class="apartment__select df j-spc-btw">
+                        Паркинг
+                        <button class="btn btn-dropdown">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+                                <path d="M12.1602 6.41L6.50016 0.75L0.840157 6.41L1.55016 7.11L6.50016 2.16L11.4502 7.11L12.1602 6.41Z" fill="#161616"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="apartment__list apartment__list--parking  df  f-wrap">
+                        <div class="apartment__btn apartment-selected default">Паркинг № 1.14</div>
+                        <div class="apartment__btn ">Паркинг № 5 — ул. Камова 3</div>
+                        <div class="apartment__btn ">Паркинг № 7.15 — ул. Михаила Миля 16а</div>
+                        <div class="apartment__btn ">Паркинг № 7.25 — ул. Авиационная 43</div>
+                        <div class="apartment__btn ">Паркинг № 7.57 — ул. Пилотная 10</div>
+                        <div class="apartment__btn ">Паркинг на ул. Гинтова 3а</div>
+                        <div class="apartment__btn ">Паркинг на ул. Камова 5</div>
+                    </div>
+                </div>
+                <div class="apartment__img">
+                    <img src="img/landing/img4.png" alt="image">
+
+                </div>
+            </div>
+            <div class="choose__right">
+                <div class="apartment__area">
+                    <h4 class="apartment__title">Уровень</h4>
+                    <div id="slider-level"></div>
+                    <p class="df j-spc-btw">
+                        <span class="area__start start">1</span>
+                        <span class="area__end end" >8</span>
+
+                    </p>
+                </div>
+                <div class="apartment__price">
+                    <h4 class="apartment__title">Цена, BYN</h4>
+                    <div id="slider-byn"></div>
+                    <p class="df j-spc-btw">
+                        <span class="price__start start">13000</span>
+                        <span class="price__end end">40000</span>
+                    </p>
+
+                </div>
+                <div class="area__actions df j-spc-btw">
+                    <button class="btn btn-green clear">Сбросить</button>
+                    <button class="btn btn-orange">Подобрать варианты</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="plans-overlay">
+        <div class="plans df f-wrap">
+            <h2 class="section__title ">Варианты планировок</h2>
+            <div class="plans__left">
+                <h2 class="dn">Количество
+                    комнат:</h2>
+                <div class="palns__room-list df ">
+                    <h2>Количество
+                        комнат:</h2>
+                    <div>1</div>
+                    <div class="selected">2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                </div>
+                <div class="plans__slider">
+                    <div class="plans__gallery slider-for">
+                        <div class="gallery-item">
+                            <img src="img/landing/slider1.png" alt="plan">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img/landing/slider1.png" alt="plan">
+
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img/landing/slider1.png" alt="plan">
+
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img/landing/slider1.png" alt="plan">
+
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img/landing/slider1.png" alt="plan">
+                        </div>
+                    </div>
+                    <div class="plans__gallery slider-nav">
+                        <div class="gallery-item">
+                            <img src="img/landing/slider2.png" alt="plan">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img/landing/slider2.png" alt="plan">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img/landing/slider2.png" alt="plan">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img/landing/slider2.png" alt="plan">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img/landing/slider2.png" alt="plan">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="plans__right">
+                <h4>ЖК "Новая Боровая"</h4>
+               <p>Жильё в Новой Боровой — это продуманные планировки, высокое качество строительства и комфорт в каждом метре. Здесь создаются условия для удобной жизни в окружении современной инфраструктуры.</p>
+              <p>В Новой Боровой вы можете выбрать уникальные виды квартир: с гардеробной, террасой, погребом, кладовой, открытым балконом или застекленной лоджией. Разнообразные планировки позволяют подобрать идеальный вариант под свой собственный сценарий жизни.</p>
+               <p class="small">
+                   Примечание: планировочные решения носят информационный характер. Застройщик оставляет за собой право изменять отдельные элементы концепции, сохраняя функциональную составляющую.
+                   <br>
+                    Все расчеты произведены с учетом норм и требований РБ.
+               </p>
+                <button class="btn btn-orange">Записаться на консультацию</button>
+            </div>
+        </div>
+    </div>
+    <div class="info df f-wrap">
+        <h2 class="section__title fw">Новая Боровая — европейский стандарт городской жизни</h2>
+        <div class="info__left">
+            <p>
+                Жилой комплекс расположен рядом с основными магистралями города, что позволяет быстро и удобно добраться до любой точки Минска. Здесь есть всё необходимое для комфортной жизни: школы, детские сады, магазины, кафе, рестораны, спортивные объекты и многое другое.
+            </p>
+        </div>
+        <div class="info__right">
+            <img src="img/landing/borovaya-logo.svg" alt="image">
+        </div>
+    </div>
+    <div class="gallery">
+       <ul class="df gallery__tabs f-wrap">
+           <li class="tab__item tab__item-selected">Архитектура</li>
+           <li class="tab__item ">Подъезды</li>
+           <li class="tab__item ">Детские площадки</li>
+           <li class="tab__item ">Детские садики</li>
+           <li class="tab__item ">Спорт</li>
+           <li class="tab__item ">Школа</li>
+           <li class="tab__item ">Благоустройство</li>
+       </ul>
+        <div class="gallery-list" id="tab-1">
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+        </div>
+        <div class="gallery-list dn" id="tab-2">
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+        </div>
+        <div class="gallery-list dn" id="tab-3">
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+        </div>
+        <div class="gallery-list dn" id="tab-4">
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+        </div>
+        <div class="gallery-list dn" id="tab-5">
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+        </div>
+        <div class="gallery-list dn" id="tab-6">
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+        </div>
+        <div class="gallery-list dn" id="tab-7">
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+            <div class="gallery-item">
+                <img src="img/landing/img6.png" alt="gallery">
+            </div>
+        </div>
+    </div>
+    <div class="life">
+        <h2 class="section__title ">Жизнь в Новой Боровой</h2>
+        <img src="img/landing/img5.png" alt="">
+    </div>
+
+    <div class="map">
+        <div id="mymap" style="width: 100%; height: 450px;"></div>
+        <style type="text/css">
+            .ymaps-2-1-79-inner-panes {
+                filter: grayscale(1);
+                -ms-filter: grayscale(1);
+                -webkit-filter: grayscale(1);
+                -moz-filter: grayscale(1);
+                -o-filter: grayscale(1);
+            }
+        </style>
+    </div>
+
+</main>
+<footer>
+    <div class="footer__top df">
+        <div class="footer__left">
+            <span>01.</span>
+            <h4>Позвонить</h4>
+            <div class="qr df">
+                <div class="qr__left">
+                    <img src="img/qr.svg" alt="qr">
+                    <p>наведите камеру чтобы позвонить!</p>
+                </div>
+                <div class="qr__right">
+                    <h2> +375 (29) 188-55-99</h2>
+                    <p>Пн – Пт: с 9:00 до 18:00</p>
+                </div>
+
+            </div>
+            <button class="btn btn-orange df j-spc-btw"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2427 18.6192C5.70023 18.6192 2.01807 14.937 2.01807 10.3945C2.01807 5.85208 5.70023 2.16992 10.2427 2.16992C14.7851 2.16992 18.4673 5.85208 18.4673 10.3945C18.4673 14.937 14.7851 18.6192 10.2427 18.6192ZM10.2427 17.6322C12.1622 17.6322 14.0032 16.8697 15.3605 15.5123C16.7178 14.155 17.4804 12.3141 17.4804 10.3945C17.4804 8.47499 16.7178 6.63407 15.3605 5.27674C14.0032 3.91941 12.1622 3.15688 10.2427 3.15688C8.32314 3.15688 6.48221 3.91941 5.12488 5.27674C3.76756 6.63407 3.00502 8.47499 3.00502 10.3945C3.00502 12.3141 3.76756 14.155 5.12488 15.5123C6.48221 16.8697 8.32314 17.6322 10.2427 17.6322ZM9.74921 8.74962H10.7362V14.5069H9.74921V8.74962ZM10.2427 7.92716C10.0246 7.92716 9.81536 7.8405 9.66112 7.68626C9.50688 7.53202 9.42023 7.32282 9.42023 7.10469C9.42023 6.88656 9.50688 6.67737 9.66112 6.52313C9.81536 6.36888 10.0246 6.28223 10.2427 6.28223C10.4608 6.28223 10.67 6.36888 10.8243 6.52313C10.9785 6.67737 11.0651 6.88656 11.0651 7.10469C11.0651 7.32282 10.9785 7.53202 10.8243 7.68626C10.67 7.8405 10.4608 7.92716 10.2427 7.92716Z" fill="white"/>
+            </svg>
+                Показы готовых квартир проводятся по предварительной записи!</button>
+        </div>
+        <div class="footer__midd">
+            <span>02.</span>
+            <h4>Заказать звонок</h4>
+            <div class="form">
+                <p>Оставьте свои контактные данные, и мы пригласим вас на экскурсию, где ответим на все ваши вопросы!</p>
+                <form action="">
+                    <div class="form-control df fw">
+                        <input type="tel" placeholder="Номер телефона">
+                        <button type="submit" class="btn btn-green df"> Отправить <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                            <circle cx="2.27979" cy="2.0503" r="2.05616" fill="white"/>
+                        </svg></button>
+                    </div>
+                    <div class="df ">
+
+                        <input type="checkbox">
+                        <label for="">
+
+                            Я согласен(а) с условиями обработки <br> <a href="#">персональных данных</a>
+
+                        </label>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="footer__right">
+            <span>03.</span>
+            <h4>Офис продаж</h4>
+            <div class="office df">
+                <div class="office__left">
+                    <img src="img/landing/img7.png" alt="">
+                    <button class="btn btn-outline df">На карте
+                        <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                            <circle cx="2.27979" cy="2.0503" r="2.05616" fill="#161616"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="office__right">
+                    г. Минск, просп. <br> Дзержинского, 9 <br>  (помещение 1031)
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom df j-spc-btw f-wrap">
+        <div class="footer__bottom--left">
+            <ul class="footer__menu df">
+                <li class="menu__item">
+                    <a href="" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">О проекте</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Преимущества</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Квартиры</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Паркинги</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Планировки</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Инфраструктура</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Жизнь в ЖК</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Контакты</a>
+                </li>
+            </ul>
+            <div class="footer__info">
+                <p>ООО "Результативная недвижимость" УНП 193703497.<br>
+                    Лицензия на оказание риэлтерской деятельности выдана <br>
+                    Минюстом от 26.09.2023г. No02240/470 Номер лицензии в ЕРЛ: 48230000078999.
+                </p>
+            </div>
+        </div>
+        <div class="footer__bottom--right ">
+            <div class="footer__social df a-center">
+                <a href=""><img src="img/footer-social1.svg" alt=""></a>
+                <a href=""><img src="img/footer-social2.svg" alt=""></a>
+                <a href=""><img src="img/footer-social3.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="CallMe_back_modal">
+
+    <div class="CallMe_back_modal_body">
+        <div class="header_bodyBig">
+            <div class="callMe_header">
+                <img src="img/Icon.png" alt="">
+                <div class="headerText">
+                    <h3>Перезвонить мне</h3>
+                    <span>В ближайшее время с вами свяжется менеджер</span>
+                </div>
+            </div>
+            <i onclick="
+        document.querySelector('.CallMe_back_modal').style='display:none'
+        " class="bx bx-x"></i>
+        </div>
+        <div class="lineBottom"></div>
+        <div class="callModal_bottom">
+            <img class="ImgDesign" src="img/Abstract Design (2).png" alt="">
+            <div class="bigWith_back">
+                <div class="ClickButtonsBig">
+                    <button class="ClickButtonsBig-button active" onclick="ClickBtn(0)"><img src="img/phone-line.png" alt=""> Заказать звонок</button>
+                    <button class="ClickButtonsBig-button" onclick="ClickBtn(1)"><img src="img/WhatsApp.png" alt=""> Whatsapp</button>
+                    <button class="ClickButtonsBig-button" onclick="ClickBtn(2)"><img src="img/Telegram.png" alt=""> Telegram</button>
+                    <button class="ClickButtonsBig-button" onclick="ClickBtn(3)"><img src="img/Viber.png" alt=""> Viber</button>
+                </div>
+            </div>
+            <div class="inputWith_login">
+                <label for="">Ваше Имя <span>*</span></label>
+                <div class="inputGrey extraGreyInp">
+                    <i class='bx bx-user'></i>
+                    <input type="text" placeholder="Ваше имя">
+                </div>
+
+            </div>
+            <div class="inputWith_login1">
+                <label for="">Номер телефона<span>*</span></label>
+
+                <div class="inputArrowAbsolute1">
+                    <div class="Country_input  inputGrey" type="text">
+                        <div onmouseleave="document.querySelector('.Country_input__modal1').style='display:none'"
+                             class="Country_input__modal Country_input__modal1">
+                            <div onclick="document.querySelector('.Country_input__modal1').style='display:none'"
+                                 class="Country_input__modal__active">
+
+                                <div class="Country_input__modal__select"><img style="width: 27px;"
+                                                                               src="img/Frame 2085655518.svg" alt="">
+                                    <div class="Country_input__phone">+375</div>
+                                </div>
+                                <i class='bx bx-chevron-up'></i>
+                            </div>
+                            <div class="Country_input__modal__option"
+                                 onclick="selectFlag('img/Frame 2085655518.svg','+375')"><img style="width: 27px;"
+                                                                                              src="img/Frame 2085655518.svg" alt="">
+                                <div class="Country_input__phone">+375</div>
+                            </div>
+                            <div class="Country_input__modal__option"
+                                 onclick="selectFlag('img/24х24_interface.png','+75')"><img style="width: 27px;"
+                                                                                            src="img/24х24_interface.png" alt="">
+                                <div class="Country_input__phone">+75</div>
+                            </div>
+
+                        </div>
+                        <div class="Country_input_action"
+                             onclick="document.querySelector('.Country_input__modal1').style='display:block'">
+                            <img style="width: 27px;" src="img/Frame 2085655518.svg" alt=""><i
+                                class='bx bx-chevron-down'></i>
+                        </div>
+                        <div class="Country_input__phone Country_input__phone_12">+375</div>
+                        <input id="phone-input" onkeyup="data_plus()" placeholder="(_) ___-__-__" type="text">
+                    </div>
+
+
+                </div>
+
+            </div>
+            <h4>* — поле, обязательное для заполнения</h4>
+
+            <div class="lineBottom"></div>
+            <div class="FullWidth_btn">
+                <button>Отправить</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script>
+    ymaps.ready(init);
+
+    function init () {
+        var myMap = new ymaps.Map("mymap", {
+                center: [53.889582, 27.523554],
+                zoom: 15.5,
+                theme: 'dark'
+            }
+            );
+        myMap.controls.remove('searchControl'); // удаляем поиск
+        myMap.controls.remove('trafficControl'); // удаляем контроль трафика
+        myMap.controls.remove('typeSelector'); // удаляем тип
+        myMap.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+        myMap.controls.remove('zoomControl'); // удаляем контрол зуммирования
+        myMap.controls.remove('rulerControl'); // удаляем контрол правил
+        myMap.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+    }
+
+</script>
+
+</body>
+</html>

@@ -42,6 +42,12 @@ header{
     background-size: cover;
     position: relative;
 }
+.landing header{
+    background: url('../img/landing/img1.png') no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+
+}
 header:before{
     content: '';
     width: 100%;
@@ -51,10 +57,17 @@ header:before{
     position: absolute;
     z-index: -1;
 }
+.landing header:before{
+    display: none;
+}
 nav{
     padding: 20px 64px;
     border-bottom: 1px solid #F0F0F0;
 
+}
+.landing nav{
+    padding: 28px 40px;
+    border-bottom: 0;
 }
 .nav__logo{
     margin-right: 20px;
@@ -62,6 +75,9 @@ nav{
 .menu{
     list-style: none;
     gap: 20px;
+}
+.landing .menu{
+    gap: 17px;
 }
 .menu__link{
     color: #fff;
@@ -100,6 +116,52 @@ nav{
     box-sizing: border-box;
 }
 
+.landing nav .btn-orange{
+    width: 154px;
+    height: 45px;
+    font-size: 12px;
+    padding: 15px 24px;
+    box-sizing: border-box;
+    line-height: 14px;
+    white-space: nowrap;
+}
+.landing .social{
+    margin-left: 0;
+    gap: 18px;
+}
+.landing .nav__contact{
+    margin-left: auto;
+    gap: 17px;
+}
+.landing .btn-orange{
+    width: 297px;
+}
+.landing .social__icon:not(:first-child):after{
+    display: none;
+}
+.landing .social__icon:after{
+   right: -9px;
+}
+.landing .nav__logo{
+    margin-right: 24px;
+}
+.landing .nav__logo a{
+    text-align: center;
+    width: 100%;
+    display: flex;
+}
+.nav__logo p{
+    max-width: 129px;
+    font-size: 13px;
+    line-height: 15px;
+    color: #fff;
+    font-weight:400;
+    font-family: "Cuprum", sans-serif;
+    padding-top: 8px;
+    margin-top: 8px;
+    border-top: 1px solid #fff;
+}
+
 .btn-yellow{
     background: #F9B807;
     border: 1px solid #979797;
@@ -121,6 +183,13 @@ nav{
     font-weight: 700;
     line-height: 77px;
     margin-bottom: 16px;
+}
+.landing .banner h1{
+    max-width: 687px;
+    margin-bottom: 32px;
+}
+.landing .banner{
+    padding: 121px 65px 299px;
 }
 .banner p{
     font-size: 24px;
@@ -144,7 +213,10 @@ nav{
     margin: 0 auto 32px;
     padding: 48px 68px 32px;
 }
-
+.landing .about__top{
+    border-radius: 18px;
+    margin-bottom: 40px;
+}
 .section__title{
     text-align: center;
     color: #172D13;
@@ -162,6 +234,9 @@ nav{
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     margin-bottom: 20px;
+}
+.landing .about p{
+    margin-bottom: 56px;
 }
 .about p:nth-child(3){
     font-weight: 500;
@@ -192,10 +267,16 @@ nav{
     max-width: 1442px;
     position: relative;
 }
+.landing .about__bottom{
+    margin-bottom: 0;
+}
 .features{
     padding-top: 64px;
     margin: 0 auto 32px;
     max-width: 1442px;
+}
+.landing .features{
+    padding-top: 120px;
 }
 .features__list{
     max-width: 1022px;
@@ -203,10 +284,16 @@ nav{
     gap: 32px;
     text-align: center;
 }
+.landing .features__list{
+    max-width: 100%;
+}
 
 .features__item{
     width: 231px;
     padding-top: 40px;
+}
+.landing .features__item{
+    width: 251px;
 }
 .features__img{
     margin-bottom: 20px;
@@ -227,10 +314,47 @@ nav{
     border-radius: 18px;
     padding-bottom: 64px;
 }
+.landing .choose__apartments{
+    background: #fff;
+    margin-bottom: 60px;
+    padding-bottom: 0;
+}
+.landing .choose__apartments .slick-next, .landing .choose__apartments .slick-prev {
+    width: 52px;
+    height: 52px;
+    background: #D76F30;
+    border-radius: 10px;
+}
+.landing .choose__apartments .slick-next{
+    right: 29px;
+}
+.landing .choose__apartments .slick-prev{
+    left: 29px;
+}
+.landing .choose__apartments .slick-prev:before {
+    width: 12px;
+    height: 20px;
+    background: url(../img/arrow-left-white.svg);
+}
+.landing .choose__apartments .slick-next:before {
+    width: 12px;
+    height: 20px;
+    background: url(../img/arrow-right-white.svg);
+}
 .choose__block .section__title{
     width: 100%;
     text-align: left;
     margin-top: 38px;
+}
+.landing .choose__block{
+    background: #EBEFF2;
+    border-radius: 18px;
+    padding-bottom: 58px;
+
+}
+.landing .choose__block .section__title{
+    margin-top: 54px;
+    margin-bottom: 6px;
 }
 .choose__block{
     gap: 32px;
@@ -248,6 +372,7 @@ nav{
     padding: 0;
     cursor:pointer;
 }
+
 .apartment__select{
     color: #161616;
     font-size: 18px;
@@ -273,6 +398,15 @@ nav{
     border-radius: 10px;
     cursor: pointer;
 }
+.landing .apartment__btn{
+    max-width: 110px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+
 .apartment-selected{
     background: #D76F30;
     color: #fff;
@@ -285,15 +419,26 @@ nav{
     z-index: 1;
     position: relative;
 }
+.landing .apartment__img{
+    margin-top: 16px;
+}
 .apartment__floor{
     background: #fff;
     border-radius: 18px;
     padding: 16px 24px;
     margin-bottom: 16px;
 }
+.landing .apartment__select{
+    margin-bottom: 0;
+    position: relative;
+    z-index: 10;
+    padding-left: 16px;
+}
+
 .choose__right{
     max-width: 640px;
     width: 100%;
+    position: relative;
 }
 .floor{
     width: 110px;
@@ -307,6 +452,31 @@ nav{
     line-height: 21px;
     font-family: "Montserrat", sans-serif;
     cursor: pointer;
+}
+.landing .apartment__floor--date .floor{
+    width: 100%;
+    
+}
+.landing .apartment__floor--list{
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    left: 0;
+    z-index: 9;
+    top: 29px;
+    border-radius: 18px;
+    padding: 24px 24px 16px;
+}
+.landing .apartment__list{
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    left: 0;
+    z-index: 9;
+    top: 40px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    padding: 16px 24px 16px;
 }
 .floor--selected{
     background: #D76F30;
@@ -348,6 +518,19 @@ nav{
     overflow: hidden;
 
 }
+.landing .choose__apartments .btn-orange{
+    width: 100%;
+}
+.apartment__list--parking .apartment__btn{
+    max-width: 100%;
+    width: 100%;
+    text-align: left;
+    justify-content: flex-start;
+    padding-left: 16px;
+    margin-bottom: 0;
+    margin-top: 0px;
+    box-sizing: border-box;
+}
 .ui-widget.ui-widget-content{
     height: 4px;
     border: none;
@@ -381,12 +564,12 @@ nav{
     margin-top: 20px;
 }
 
-#slider-area{
+#slider-area, #slider-level{
 
     width: calc(100% - 20px);
     margin: 30px  auto 0;
 }
-#slider-price{
+#slider-price, #slider-byn{
 
     width: calc(100% - 20px);
     margin: 30px  auto 0;
@@ -485,6 +668,12 @@ nav{
     width: calc(100% - 736px);
     padding-top: 95px;
 }
+.landing .plans__right{
+    padding-top: 0;
+}
+.landing .plans .section__title{
+    margin-bottom: 95px;
+}
 .plans__right h4{
     font-size: 28px;
     color: #161616;
@@ -493,6 +682,9 @@ nav{
     font-family: "Montserrat", sans-serif;
     margin-bottom: 40px;
 }
+.landing .plans__right h4{
+    text-transform: uppercase;
+}
 .plans__right p{
     color: #161616;
     font-size: 22px;
@@ -500,6 +692,19 @@ nav{
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 20px;
+}
+.landing .plans__right p{
+    font-weight: 400;
+}
+.landing .plans__right .btn-orange{
+    width: 100%;
+    margin-top: 56px;
+}
+.landing .plans__right p.small{
+    font-style: italic;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 40px;
 }
 .plans__right ul{
     color: #161616;
@@ -514,8 +719,11 @@ nav{
     border: 4px solid #D76F30;
     box-sizing: border-box;
 }
+.landing .info{
+    margin-top: 80px;
+}
 .info{
-    max-width: 1422px;
+    max-width: 1442px;
     margin: 64px auto 32px;
     background: #EBEFF2;
     border-radius: 18px;
@@ -532,6 +740,16 @@ nav{
     width: calc(100%/2 - 40px) ;
     position: relative;
 
+}
+.landing .info__left{
+    max-width: 688px;
+    width: 100%;
+}
+.landing .info__right{
+    width: calc(100% - 728px) ;
+}
+.landing .info__left:after{
+    bottom: -43px;
 }
 .info .section__title{
     position: relative;
@@ -555,6 +773,10 @@ nav{
     font-family: "Montserrat", sans-serif;
     position: relative;
     padding-top: 68px;
+}
+.landing .info__left p{
+    font-size: 32px;
+    line-height: 39px;
 }
 .info__left:before{
     content: '';
@@ -601,6 +823,40 @@ nav{
     max-width: 1442px;
     margin: 0 auto;
 
+}
+.gallery__tabs{
+    list-style: none;
+    margin-bottom: 32px;
+    width: 100%;
+    border-radius: 18px;
+    gap: 25px;
+    justify-content: space-between;
+    margin-top: 8px;
+    background: #EBEFF2;
+    overflow: hidden;
+
+}
+.tab__item{
+    padding: 19px 32px;
+    color: #161616;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    line-height: 21px;
+    cursor: pointer;
+}
+.tab__item-selected{
+    color: #fff;
+    background: #D76F30;
+}
+.life{
+    max-width: 1442px;
+    margin: 51px auto 0;
+
+}
+.life .section__title{
+    text-align: left;
+    margin-bottom: 19px;
 }
 .gallery .section__title{
     text-align: left;
@@ -874,7 +1130,43 @@ footer{
     padding: 16px;
     margin-bottom: 32px;
 }
-
+.landing .footer__left .btn-orange{
+    width: 100%;
+}
+.palns__room-list{
+    position: absolute;
+    left: 0;
+    flex-direction: column;
+    gap: 2px;
+    z-index: 10;
+}
+.palns__room-list div{
+    width: 62px;
+    height: 50px;
+    background: #EBEFF2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #161616;
+    font-size: 18px;
+    line-height: 500;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+}
+.palns__room-list h2{
+    max-width: 152px;
+    color: #161616;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.palns__room-list div.selected{
+    border-radius: 8px;
+    background: #D76F30;
+    color: #fff;
+}
 .choose__left{
     width: calc(100%/2 - 32px);
 }
@@ -894,6 +1186,9 @@ footer{
 .tn-elem__4346096441649723484272 {
     mix-blend-mode: difference;
     pointer-events: none;
+}
+.landing .ymaps-2-1-79-ground-pane{
+    filter: grayscale(0) grayscale(0) invert(0);
 }
 .point{
     width: 49px;
@@ -1309,4 +1604,9 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#mymap{
+    height: 100%;
+    width: 100%;
+    max-width: 1440px;
 }

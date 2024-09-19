@@ -4,7 +4,7 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-    .choose__block, .about, .plans, .info,  .gallery {
+    .choose__block, .about, .plans, .info,  .gallery, .life {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -26,6 +26,9 @@
     }
     .about{
         padding: 0;
+    }
+    .palns__room-list{
+        left: 20px;
     }
 
 }
@@ -250,7 +253,152 @@
     header{
         margin-top: 0;
     }
+    .landing .nav__tel{
+        display: none;
+    }
+    .landing .banner h1{
+        font-size: 56px;
+        line-height: 66px;
+    }
+    .landing header{
+        margin-top: 39px;
+        max-width: 716px;
+        border-radius: 18px;
 
+    }
+    .landing .banner{
+        padding-left: 24px;
+        padding-bottom: 315px;
+    }
+    .landing .about__top{
+        max-width: 716px;
+        padding-left: 24px;
+        padding-right: 24px;
+
+    }
+    .landing .section__title{
+        font-size: 45px;
+    }
+    .landing .about p{
+        font-size: 19px;
+    }
+    .landing .about p:nth-child(3){
+        font-size: 20px;
+    }
+    .landing .about p:last-child{
+        font-size: 15px;
+    }
+    .landing .about__bottom{
+        max-width: 716px;
+        overflow: hidden;
+        border-radius: 18px;
+
+    }
+    .landing .about__bottom img {
+        object-fit: cover;
+        height: 638px;
+
+    }
+    .landing .features{
+        padding-top: 80px;
+    }
+    .landing .features .section__title{
+        margin-bottom: 0;
+    }
+    .landing .features__item{
+        padding-top: 10px;
+        max-width: 228px;
+    }
+    .landing .choose__apartments > .section__title{
+        display: none;
+    }
+    .landing .choose__apartments{
+        max-width: 716px;
+    }
+    .landing .apartments__banner{
+        margin-bottom: 70px;
+    }
+    .landing .choose__block .section__title{
+        font-size: 38px;
+        margin-bottom: 0px;
+    }
+    .landing .choose__block{
+        gap: 22px;
+        padding-left: 61px;
+        padding-right: 61px;
+    }
+    .landing .apartment__btn{
+        width: calc(100%/5);
+    }
+   .landing .area__actions{
+       flex-direction: row;
+   }
+    .apartment__list--parking .apartment__btn{
+        width: 100%;
+    }
+    .landing .plans .section__title{
+        margin-bottom: 30px;
+    }
+    .landing .plans{
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+    .palns__room-list{
+        left: 26px;
+    }
+    .landing .plans__right{
+        padding-top: 16px;
+    }
+    .landing .plans__right p{
+        font-size: 22px;
+    }
+    .landing .info{
+        padding-top: 0;
+        background: #fff;
+    }
+    .landing .info__left p{
+        max-width: 472px;
+        margin: 0 auto;
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .landing .info__left:after, .landing .info__left:before{
+        width: 80px;
+        height: 54px;
+        background-size: cover;
+    }
+    .gallery__tabs{
+        gap: 0  ;
+    }
+    .tab__item:first-child{
+        order: 1;
+    }
+    .tab__item:nth-child(2){
+        order: 2;
+    }
+    .tab__item:nth-child(3){
+        order: 6;
+    }
+    .tab__item:nth-child(4){
+        order: 5;
+    }
+    .tab__item:nth-child(5){
+        order: 3;
+    }
+    .tab__item:nth-child(6){
+        order: 4;
+    }
+    .tab__item:nth-child(7){
+        order: 7;
+    }
+    .landing .gallery{
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+    .life{
+        padding-left: 26px;
+        padding-right: 26px;
+    }
 }
 @media  screen  and (max-width: 600px){
     .info:before{
@@ -541,6 +689,196 @@
         margin: auto;
         margin-bottom: 4px;
         box-shadow: 0px 2.76px 5.52px 0px #ffffff05, 0px 0px 13.79px 0px #ffffff0f;
+    }
+    .landing .banner h1{
+        font-size: 28px;
+        line-height: 34px;
+        max-width: 100%;
+    }
+    .landing #slider-price,  .landing #slider-byn,
+    .landing #slider-area,  .landing #slider-level {
+        width: calc(100% - 32px);
+    }
+    .landing header{
+        margin-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .landing .banner {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 230px;
+    }
+    .landing nav{
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    .landing .section__title{
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .landing .about p{
+        font-size: 16px;
+    }
+    .landing .about__top {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .landing .about__bottom{
+        padding-left: 16px;
+        padding-right: 16px;
+        overflow: hidden;
+        margin-bottom: 64px;
+
+    }
+    .landing .about__bottom img{
+        height: 328px;
+        object-position: 50%;
+        border-radius: 18px;
+    }
+    .landing .features{
+        padding-top: 0;
+    }
+    .landing .features__item{
+        max-width: 156px;
+    }
+    .landing .apartments__banner{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .landing .choose__apartments .slick-next, .landing .choose__apartments .slick-prev{
+        width: 32px;
+        height: 32px;
+    }
+    .landing .choose__apartments .slick-prev{
+        left:   4px;
+    }
+    .landing .choose__apartments .slick-next{
+        right: 4px;
+    }
+    .landing .choose__block{
+        width: calc(100% - 12px);
+        margin: 0 auto;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 22px;
+    }
+    .landing .choose__left{
+        flex-direction: column;
+    }
+    .landing .apartment{
+        order: 2    ;
+    }
+    .landing .choose__block .section__title{
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 0;
+        padding-top: 0;
+        margin-bottom: 22px;
+        padding-left: 16px;
+        box-sizing: border-box;
+    }
+    .landing nav .btn-orange{
+        display: none;
+    }
+    .landing .apartment__btn {
+        width: calc(100% / 3);
+    }
+    .landing .apartment__img img{
+        height: 328px;
+        object-fit: cover;
+        border-radius: 18px;
+    }
+    .apartment__list--parking .apartment__btn{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .palns__room-list{
+        position: relative;
+        flex-direction: row;
+        width: 100%;
+        left: 0;
+        margin-bottom: 10px;
+    }
+    .landing .plans__left{
+        flex-wrap: wrap;
+    }
+    .palns__room-list h2{
+        width: 100%;
+        display: none;
+    }
+    .landing .plans__left >h2{
+        display: block;
+        width: 100%;
+        margin-bottom: 16px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        color: #161616;
+        font-weight: 600;
+    }
+    .landing .plans__right p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .landing .info:before{
+        display: none;
+    }
+    .landing .info__left p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .landing .info__left:before{
+        top: -30px
+    }
+    .landing .info__left:after{
+        bottom: -53px;
+    }
+    .gallery__tabs{
+        justify-content: flex-start;
+    }
+    .life {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .landing .gallery{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .tab__item{
+        font-size: 14px ;
+        padding: 14px 16px;
+    }
+    .tab__item:first-child{
+        order: 1;
+    }
+    .tab__item:nth-child(2){
+        order: 2;
+    }
+    .tab__item:nth-child(3){
+        order: 3;
+
+    }
+    .tab__item:nth-child(4){
+        order: 4;
+
+    }
+    .tab__item:nth-child(5){
+        order: 5;
+
+    }
+    .tab__item:nth-child(6){
+        order: 6;
+
+    }
+    .tab__item:nth-child(7){
+        order: 7;
+
+    }
+    .landing     .gallery .slick-prev {
+        left: -12px;
+    }
+    .landing     .gallery .slick-next {
+        right: -12px;
     }
 }
 @media  screen  and (max-width: 360px){
