@@ -807,7 +807,7 @@
 <!--<script src="https://api-maps.yandex.ru/2.1/?apikey=2d4d0fe9-daf7-4436-9003-b491bcabe3b8&lang=ru_RU"></script>-->
 <script src="https://api-maps.yandex.ru/3.0/?apikey=2d4d0fe9-daf7-4436-9003-b491bcabe3b8&lang=ru_RU" type="text/javascript"></script>
 <script>
-    console.log('cccc')
+    console.log('eeee')
     let mapdark = [
         {
             "tags": {
@@ -853,6 +853,18 @@
         {
             "tags": {
                 "any": [
+                    "building",
+                    "address",
+                    "fence"
+                ]
+            },
+            "stylers": {
+                "visibility": "off"
+            }
+        },
+        {
+            "tags": {
+                "any": [
                     "transit"
                 ]
             },
@@ -881,7 +893,7 @@
         // координаты метки на карте
         const MARKER_COORDINATES = [37.623082, 55.752540];
         // Объект с параметрами центра и зумом карты
-        const LOCATION = {center: CENTER_COORDINATES, zoom: 16};
+        const LOCATION = {center: CENTER_COORDINATES, zoom: 14};
         // Создание объекта карты
         map = new YMap(document.getElementById('mymap'), {location: LOCATION});
         // Добавление слоев на карту
