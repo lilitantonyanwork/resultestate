@@ -879,6 +879,25 @@ nav{
     height: 20px;
     background: url('../img/arrow-left-white.svg');
 }
+.life .slick-next, .life .slick-prev{
+    width: 52px;
+    height: 52px;
+    background: #D76F30;
+    border-radius: 10px;
+}
+.life .slick-next:before{
+    width: 12px;
+    height: 20px;
+    background: url('../img/arrow-right-white.svg');
+}
+.life .slick-prev:before{
+    width: 12px;
+    height: 20px;
+    background: url('../img/arrow-left-white.svg');
+}
+.life img{
+    border-radius: 18px;
+}
 .map{
     max-width: 1442px;
     margin: 32px auto;

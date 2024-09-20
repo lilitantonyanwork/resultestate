@@ -86,6 +86,14 @@ $(function (){
         fade: true,
         cssEase: 'linear'
     });
+    $('.life-list').slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
     $('.landing .apartments__banner').slick({
         dots: false,
         arrows: true,
@@ -171,10 +179,12 @@ $(function (){
 
     $('.apartment__list--parking .apartment__btn').on('click', function (){
         $('.apartment__img--parking img').hide();
-        $('.apartment__img--parking img').eq($(this).index() ).show()
+        $('.apartment__img--parking img').eq($(this).index() ).show();
+        $('.apartment__list--parking').parent().find('.apartment__select').trigger('click')
     })
     $('.apartment__list--home .apartment__btn').on('click', function (){
         $('.apartment__list--home-img img').hide();
-        $('.apartment__list--home-img  img').eq($(this).index() ).show()
+        $('.apartment__list--home-img  img').eq($(this).index() ).show();
+        $('.apartment__list--home').parent().find('.apartment__select').trigger('click')
     })
 })
