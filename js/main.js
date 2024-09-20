@@ -173,4 +173,8 @@ $(function (){
         $('.apartment__img--parking img').hide();
         $('.apartment__img--parking img').eq($(this).index() ).show()
     })
+    $('.apartment__list--home .apartment__btn').on('click', function (){
+        $('.apartment__list--home-img img').hide();
+        $('.apartment__list--home-img  img').eq($(this).index() ).show()
+    })
 })
