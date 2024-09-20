@@ -169,5 +169,8 @@ $(function (){
         $(this).addClass('selected');
     })
 
-
+    $('.apartment__list--parking .apartment__btn').on('click', function (){
+        $('.apartment__img--parking img').hide();
+        $('.apartment__img--parking img').eq($(this).index() ).show()
+    })
 })
