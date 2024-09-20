@@ -821,7 +821,7 @@
                 ]
             },
             "stylers": {
-                "visibility": "off"
+                "visibility": "on"
             }
         }
     ]
@@ -853,11 +853,6 @@
         map.addChild(new YMapControls({position: 'right'})
             .addChild(new YMapZoomControl({}))
         );
-        map.addChild(new YMapControls({position: 'top right'})
-            .addChild(new YMapGeolocationControl({}))
-        );
-
-
         // Добавление центра карты
         map.addChild(new YMapMarker({coordinates: CENTER_COORDINATES}));
         // Добавление маркера на карту
